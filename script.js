@@ -20,8 +20,8 @@ let Promise3=new Promise((resolve, reject)=>{
         }, 3000);
 });
 
-Promise.all(promises1, promises2, promises2).then(results => {
-        const table = document.querySelector('table');
+Promise.all(promises1, promises2, promises3).then(results => {
+        const table = document.getElementsById('output');
         table.innerHTML = '';
 
         results.forEach((time, index) => {
